@@ -443,12 +443,56 @@ function Checkbox2(props) {
   return /* @__PURE__ */ jsx3(CheckboxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ jsx3(CheckboxIndicator, { asChild: true, children: /* @__PURE__ */ jsx3(Check, { weight: "bold" }) }) }));
 }
 Checkbox2.displayName = "Checkbox";
+
+// src/components/MultiStep/styles.tsx
+var MultiStepContainer = styled("div", {});
+var Label = styled(Text, {
+  color: "$gray200",
+  defaultVariants: {
+    size: "$xs"
+  }
+});
+var Steps = styled("div", {
+  display: "grid",
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)",
+  gap: "$2",
+  marginTop: "$1"
+});
+var Step = styled("div", {
+  height: "$1",
+  borderRadius: "$px",
+  background: "$gray600",
+  variants: {
+    active: {
+      true: {
+        background: "$gray100"
+      }
+    }
+  }
+});
+
+// src/components/MultiStep/index.tsx
+import { jsx as jsx4, jsxs as jsxs3 } from "react/jsx-runtime";
+function MultiStep({ size, currentStep = 1 }) {
+  return /* @__PURE__ */ jsxs3(MultiStepContainer, { children: [
+    /* @__PURE__ */ jsxs3(Label, { children: [
+      "Passo ",
+      currentStep,
+      " de ",
+      size
+    ] }),
+    /* @__PURE__ */ jsx4(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ jsx4(Step, { active: currentStep >= step }, step);
+    }) })
+  ] });
+}
 export {
   Avatar2 as Avatar,
   Box,
   Button,
   Checkbox2 as Checkbox,
   Heading,
+  MultiStep,
   Text,
   TextArea,
   TextInput
