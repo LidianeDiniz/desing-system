@@ -16,8 +16,6 @@ export const Button = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '$2',
-
-  
   cursor: 'pointer',
 
   svg: {
@@ -27,6 +25,10 @@ export const Button = styled('button', {
 
   '&:disabled': {
     cursor: 'not-allowed',
+  },
+
+  '&:focus': {
+    boxShadow: '0 0 0 2px $color$gray',
   },
 
   variants: {
