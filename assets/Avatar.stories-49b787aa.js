@@ -1,0 +1,2 @@
+import{A as t}from"./index-4d008fd5.js";import"./index-e187c167.js";import"./iframe-2f0038ef.js";import"./index-505728eb.js";import"./jsx-runtime-c5c8cfcd.js";const n={title:"Data/Avatar",component:t,args:{src:"https://github.com/LidianeDiniz.png",alt:"Lidiane Diniz"},argTypes:{src:{control:{type:"text"}}}},e={},c={args:{src:"undefined"}},p=["Primary","WhthFallback"];export{e as Primary,c as WhthFallback,p as __namedExportsOrder,n as default};
+//# sourceMappingURL=Avatar.stories-49b787aa.js.map
