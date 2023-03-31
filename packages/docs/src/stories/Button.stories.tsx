@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@ignite-ui/react'
+import { Button, ButtonProps } from '@lidiane-ui/react'
 import { ArrowArcRight } from 'phosphor-react'
 
 export default {
@@ -16,6 +16,12 @@ export default {
       options: ['primary', 'secondary', 'tertiary'],
       control: {
         type: 'inline-radio',
+      },
+    },
+
+    children: {
+      control: {
+        type: null,
       },
     },
 

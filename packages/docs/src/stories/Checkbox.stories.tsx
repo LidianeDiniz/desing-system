@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui/react'
+import { Box, Text, Checkbox, CheckboxProps } from '@lidiane-ui/react'
 
 export default {
   title: 'Form/Checkbox',
@@ -15,10 +15,12 @@ export default {
           {Story()}
           <Text size="sm">Accept terms of use</Text>
         </Box>
+
       )
     },
   ],
 } as Meta
+
 
 export const Primary: StoryObj<CheckboxProps> = {}
 

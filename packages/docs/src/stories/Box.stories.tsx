@@ -1,5 +1,5 @@
-import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@ignite-ui/react'
+import { Box, BoxProps, Text } from '@lidiane-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
   title: 'Surfaces/Box',

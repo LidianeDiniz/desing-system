@@ -1,5 +1,5 @@
-import type { StoryObj, Meta } from '@storybook/react'
-import { Box, MultiStep, MultiStepProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, MultiStep, MultiStepProps } from '@lidiane-ui/react/dist'
 
 export default {
   title: 'Form/Mult Step',

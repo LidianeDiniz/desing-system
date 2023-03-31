@@ -16,6 +16,8 @@ export const Button = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '$2',
+
+  
   cursor: 'pointer',
 
   svg: {
